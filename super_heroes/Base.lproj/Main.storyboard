@@ -211,7 +211,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic7-F0-iU8" customClass="RadarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="427" width="374" height="268.5"/>
+                                <rect key="frame" x="20" y="427" width="374" height="358"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -219,7 +219,7 @@
                         <constraints>
                             <constraint firstItem="Jd1-5A-Nek" firstAttribute="top" secondItem="4p9-9H-LKm" secondAttribute="top" constant="20" id="13V-jy-nXG"/>
                             <constraint firstItem="ic7-F0-iU8" firstAttribute="top" secondItem="Jd1-5A-Nek" secondAttribute="bottom" constant="50" id="5Kp-R2-DbM"/>
-                            <constraint firstItem="ic7-F0-iU8" firstAttribute="height" secondItem="4CN-gs-fJ6" secondAttribute="height" multiplier="0.3" id="9nd-Sz-qYx"/>
+                            <constraint firstItem="ic7-F0-iU8" firstAttribute="height" secondItem="4CN-gs-fJ6" secondAttribute="height" multiplier="0.4" id="9nd-Sz-qYx"/>
                             <constraint firstItem="4p9-9H-LKm" firstAttribute="trailing" secondItem="Jd1-5A-Nek" secondAttribute="trailing" id="OqB-6o-cVJ"/>
                             <constraint firstItem="4p9-9H-LKm" firstAttribute="trailing" secondItem="ic7-F0-iU8" secondAttribute="trailing" constant="20" id="X57-4J-0RN"/>
                             <constraint firstItem="Jd1-5A-Nek" firstAttribute="height" secondItem="4CN-gs-fJ6" secondAttribute="height" multiplier="0.3" id="hG1-gu-rCJ"/>

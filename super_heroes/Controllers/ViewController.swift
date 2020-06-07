@@ -46,14 +46,14 @@ class ViewController: UIViewController {
     }
     
     func updateUI(){
-        self.view.backgroundColor = GradientColor(.topToBottom,   frame: self.view.layer.bounds , colors: [UIColor.red, UIColor.blue])
+        self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.layer.bounds , colors: [UIColor.red, UIColor.blue])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "heroeSegue" {
+        if segue.identifier == K.heroeSegue {
            let destinationVC = segue.destination as! HeroeViewController
            
-            destinationVC.heroeId = heroeSeleccionadoId
+           destinationVC.heroeId = heroeSeleccionadoId
         }
     }
 }
@@ -64,7 +64,7 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "heroeCvCell", for: indexPath) as! CustomCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.heroeCvCell, for: indexPath) as! CustomCollectionViewCell
         let currentCell = dataCollectionView[indexPath.row]
         let imageURL = URL(string: currentCell.imageUrl)
            
@@ -85,15 +85,23 @@ extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         heroeSeleccionadoId =  dataCollectionView[indexPath.row].id
-         self.performSegue(withIdentifier: "heroeSegue", sender: self)
+        self.performSegue(withIdentifier: K.heroeSegue, sender: self)
     }
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let ancho = collectionView.bounds.width / 3
-        let alto = ancho
-
+        var ancho: CGFloat = 0
+        var alto: CGFloat = 0
+        
+        if UIDevice.current.orientation.isLandscape {
+            ancho = 80.0
+            alto = ancho
+        } else {
+            ancho = collectionView.bounds.width / 3
+            alto = ancho
+        }
+        
         return CGSize(width: ancho, height: alto)
     }
 }
@@ -137,7 +145,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let currentCell = dataTableView[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "heroeCell", for: indexPath) as! CustomTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.heroeCell, for: indexPath) as! CustomTableViewCell
         let imageURL = URL(string: currentCell.imageUrl)
         
         cell.nombreLabel.text = currentCell.name
@@ -159,7 +167,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         heroeSeleccionadoId = dataTableView[indexPath.row].id
-        self.performSegue(withIdentifier: "heroeSegue", sender: self)
+        self.performSegue(withIdentifier: K.heroeSegue, sender: self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -181,8 +189,8 @@ extension ViewController: UITextFieldDelegate {
          if nombre != "" {
             heroesController.getSuperHeroesPorNombre(nombre: nombre)
          } else {
-            heroesController.getSuperHeroes()
             heroesController.resetNumeroPagina()
+            heroesController.getSuperHeroes()
         }
      }
 }

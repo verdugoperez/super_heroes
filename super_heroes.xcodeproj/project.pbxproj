@@ -11,6 +11,7 @@
 		C340B52D248D520200978D4C /* DataSetValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340B52C248D520200978D4C /* DataSetValueFormatter.swift */; };
 		C34B0A28248B7F5E006E074A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B0A27248B7F5E006E074A /* CustomTableViewCell.swift */; };
 		C3819617248B5AF500F32F03 /* HeroeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3819616248B5AF500F32F03 /* HeroeViewController.swift */; };
+		C3ED2E2C248D680B0094A4E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ED2E2B248D680B0094A4E5 /* Constants.swift */; };
 		C3F0AD492489C1EB00B94AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0AD482489C1EB00B94AD8 /* AppDelegate.swift */; };
 		C3F0AD4B2489C1EB00B94AD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0AD4A2489C1EB00B94AD8 /* SceneDelegate.swift */; };
 		C3F0AD4D2489C1EB00B94AD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0AD4C2489C1EB00B94AD8 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		C340B52C248D520200978D4C /* DataSetValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetValueFormatter.swift; sourceTree = "<group>"; };
 		C34B0A27248B7F5E006E074A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C3819616248B5AF500F32F03 /* HeroeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeViewController.swift; sourceTree = "<group>"; };
+		C3ED2E2B248D680B0094A4E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3F0AD452489C1EB00B94AD8 /* super_heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = super_heroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F0AD482489C1EB00B94AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F0AD4A2489C1EB00B94AD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C3ED2E2D248D69DF0094A4E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3F0AD4C2489C1EB00B94AD8 /* ViewController.swift */,
+				C3819616248B5AF500F32F03 /* HeroeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3ED2E2E248D6A6E0094A4E5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C33F0BE3248C3577005FBEEE /* CustomCollectionViewCell.swift */,
+				C34B0A27248B7F5E006E074A /* CustomTableViewCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C3ED2E2F248D6A860094A4E5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C3ED2E2B248D680B0094A4E5 /* Constants.swift */,
+				C340B52C248D520200978D4C /* DataSetValueFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C3F0AD3C2489C1EB00B94AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -94,12 +123,10 @@
 			children = (
 				C3F0AD482489C1EB00B94AD8 /* AppDelegate.swift */,
 				C3F0AD4A2489C1EB00B94AD8 /* SceneDelegate.swift */,
-				C3819616248B5AF500F32F03 /* HeroeViewController.swift */,
-				C340B52C248D520200978D4C /* DataSetValueFormatter.swift */,
-				C3F0AD4C2489C1EB00B94AD8 /* ViewController.swift */,
+				C3ED2E2D248D69DF0094A4E5 /* Controllers */,
+				C3ED2E2F248D6A860094A4E5 /* Utils */,
 				C3F0AD4E2489C1EB00B94AD8 /* Main.storyboard */,
-				C33F0BE3248C3577005FBEEE /* CustomCollectionViewCell.swift */,
-				C34B0A27248B7F5E006E074A /* CustomTableViewCell.swift */,
+				C3ED2E2E248D6A6E0094A4E5 /* Components */,
 				C3F0AD512489C1EE00B94AD8 /* Assets.xcassets */,
 				C3F0AD532489C1EE00B94AD8 /* LaunchScreen.storyboard */,
 				C3F0AD562489C1EE00B94AD8 /* Info.plist */,
@@ -245,6 +272,7 @@
 				C340B52D248D520200978D4C /* DataSetValueFormatter.swift in Sources */,
 				C34B0A28248B7F5E006E074A /* CustomTableViewCell.swift in Sources */,
 				C33F0BE4248C3577005FBEEE /* CustomCollectionViewCell.swift in Sources */,
+				C3ED2E2C248D680B0094A4E5 /* Constants.swift in Sources */,
 				C3F0AD492489C1EB00B94AD8 /* AppDelegate.swift in Sources */,
 				C3F0AD5D2489D9BC00B94AD8 /* SuperHeroesController.swift in Sources */,
 				C3F0AD62248A0A7000B94AD8 /* SuperHeroeModel.swift in Sources */,

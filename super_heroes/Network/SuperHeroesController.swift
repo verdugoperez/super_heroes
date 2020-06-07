@@ -33,7 +33,7 @@ class SuperHeroesController {
          for id in idsPorPagina {
              let urlString = "\(superHeroesURL)\(id)"
              self.group.enter()
-             //getSuperHeroePorId(id: id)
+    
             AF.request(urlString).responseJSON { (response) in
                switch response.result {
                   case .success(let value):
