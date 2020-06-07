@@ -21,7 +21,7 @@ class SuperHeroesController {
     }
     
     private var id = 0
-    private let superHeroesURL = "https://superheroapi.com/api/\(10156112965520834)/"
+    private let superHeroesURL = "https://superheroapi.com/api/10156112965520834/"
     private var pagina = 0
     var delegate: SuperHeroesControllerDelegate?
     private let group = DispatchGroup()
@@ -81,17 +81,17 @@ class SuperHeroesController {
                     let fullName = biography["full-name"] as! String
                     let publisher = biography["publisher"] as! String
                     let appearance = JSON["appearance"] as! [String: Any]
-                    let gender = appearance["gender"] as! String
-                    let race = appearance["race"] as! String
+                    let gender = appearance["gender"] as! String != "null" ? appearance["gender"] as! String : "Desconocido"
+                    let race = appearance["race"] as! String != "null" ? appearance["race"] as! String : "Desconocido"  
                     
                     let powers = JSON["powerstats"] as! [String: Any]
                     
-                    let intelligence = Double(powers["intelligence"] as! String)!
-                    let strength = Double(powers["strength"] as! String)!
-                    let speed = Double(powers["speed"] as! String)!
-                    let durability = Double(powers["durability"] as! String)!
-                    let power = Double(powers["power"] as! String)!
-                    let combat = Double(powers["combat"] as! String)!
+                    let intelligence = Double(powers["intelligence"] != nil ? powers["intelligence"] as! String : "0.0")!
+                    let strength = Double(powers["strength"] != nil ? powers["strength"] as! String : "0.0")!
+                    let speed = Double(powers["speed"] != nil ? powers["speed"] as! String : "0.0")!
+                    let durability = Double(powers["durability"] != nil ? powers["durability"] as! String : "0.0")!
+                    let power = Double(powers["power"] != nil ? powers["power"] as! String : "0.0")!
+                    let combat =  Double(powers["combat"] != nil ? powers["combat"] as! String : "0.0")!
                     
                     var powerstats = [Double]()
                     

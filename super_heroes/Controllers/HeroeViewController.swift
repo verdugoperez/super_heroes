@@ -12,8 +12,6 @@ import SCLAlertView
 import Charts
 
 class HeroeViewController: UIViewController {
-
- 
     @IBOutlet weak var radarChartView: RadarChartView!
     @IBOutlet weak var heroeImageView: UIImageView!
     @IBOutlet weak var nombreLabel: UILabel!
