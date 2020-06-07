@@ -10,4 +10,5 @@ target 'super_heroes' do
   pod 'SCLAlertView'
   pod 'SDWebImage'
   pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon', :branch => 'swift5'
+  pod 'Charts'
 end

@@ -3,6 +3,9 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
   - SCLAlertView (0.8)
   - SDWebImage (5.8.0):
     - SDWebImage/Core (= 5.8.0)
@@ -11,12 +14,14 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - ChameleonFramework/Swift (from `https://github.com/wowansm/Chameleon`, branch `swift5`)
+  - Charts
   - SCLAlertView
   - SDWebImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Charts
     - SCLAlertView
     - SDWebImage
 
@@ -33,9 +38,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: c1ca147559e730bfb2182c8c7aafbdd90a867987
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
 
-PODFILE CHECKSUM: 7888c1a8c3b26f270fce699f40bf3f1ca38d2f26
+PODFILE CHECKSUM: 7f2ee646c2203e069aabcb053b8e65b8f730521b
 
 COCOAPODS: 1.9.1

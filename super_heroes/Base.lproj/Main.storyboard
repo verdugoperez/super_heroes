@@ -210,12 +210,20 @@
                                     <constraint firstItem="IVK-bG-xyx" firstAttribute="top" secondItem="Jd1-5A-Nek" secondAttribute="top" id="u6p-fr-eKK"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic7-F0-iU8" customClass="RadarChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="427" width="374" height="268.5"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Jd1-5A-Nek" firstAttribute="top" secondItem="4p9-9H-LKm" secondAttribute="top" constant="20" id="13V-jy-nXG"/>
+                            <constraint firstItem="ic7-F0-iU8" firstAttribute="top" secondItem="Jd1-5A-Nek" secondAttribute="bottom" constant="50" id="5Kp-R2-DbM"/>
+                            <constraint firstItem="ic7-F0-iU8" firstAttribute="height" secondItem="4CN-gs-fJ6" secondAttribute="height" multiplier="0.3" id="9nd-Sz-qYx"/>
                             <constraint firstItem="4p9-9H-LKm" firstAttribute="trailing" secondItem="Jd1-5A-Nek" secondAttribute="trailing" id="OqB-6o-cVJ"/>
+                            <constraint firstItem="4p9-9H-LKm" firstAttribute="trailing" secondItem="ic7-F0-iU8" secondAttribute="trailing" constant="20" id="X57-4J-0RN"/>
                             <constraint firstItem="Jd1-5A-Nek" firstAttribute="height" secondItem="4CN-gs-fJ6" secondAttribute="height" multiplier="0.3" id="hG1-gu-rCJ"/>
+                            <constraint firstItem="ic7-F0-iU8" firstAttribute="leading" secondItem="4p9-9H-LKm" secondAttribute="leading" constant="20" id="he1-F0-qnk"/>
                             <constraint firstItem="Jd1-5A-Nek" firstAttribute="leading" secondItem="4p9-9H-LKm" secondAttribute="leading" id="me7-eq-9EW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4p9-9H-LKm"/>
@@ -225,6 +233,7 @@
                         <outlet property="heroeImageView" destination="gj9-tn-eju" id="f4a-7R-zt1"/>
                         <outlet property="nombreLabel" destination="Xed-VE-Xlv" id="PPN-7h-KZb"/>
                         <outlet property="publisher" destination="rrQ-Ax-p47" id="kt8-ia-tLT"/>
+                        <outlet property="radarChartView" destination="ic7-F0-iU8" id="st3-pE-V0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Id4-yq-36Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

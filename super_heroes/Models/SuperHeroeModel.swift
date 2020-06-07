@@ -10,12 +10,13 @@ import Foundation
 
 // MARK: - SuperHeroe
 struct SuperHeroeModel: Codable {
-    let id, name: String
+   let id, name: String
    // let powerstats: Powerstats
    let fullName: String?
    let publisher: String
    let gender: String?
    let race: String?
+   let powerstats: [Double]?
   
    // let appearance: Appearance
    // let work: Work

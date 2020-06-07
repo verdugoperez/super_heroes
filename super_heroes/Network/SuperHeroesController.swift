@@ -45,7 +45,7 @@ class SuperHeroesController {
                          let biography = JSON["biography"] as! [String: Any]
                          let publisher = biography["publisher"] as! String
                         
-                        let superHeroe = SuperHeroeModel(id: id, name: name, fullName: nil, publisher: publisher, gender: nil, race: nil, imageUrl: imageUrl)
+                        let superHeroe = SuperHeroeModel(id: id, name: name, fullName: nil, publisher: publisher, gender: nil, race: nil, powerstats: nil, imageUrl: imageUrl)
 
                          self.listadoHeroes.append(superHeroe)
                          self.group.leave()
@@ -84,7 +84,25 @@ class SuperHeroesController {
                     let gender = appearance["gender"] as! String
                     let race = appearance["race"] as! String
                     
-                    let superHeroe = SuperHeroeModel(id: id, name: name, fullName: fullName, publisher: publisher, gender: gender, race: race, imageUrl: imageUrl)
+                    let powers = JSON["powerstats"] as! [String: Any]
+                    
+                    let intelligence = Double(powers["intelligence"] as! String)!
+                    let strength = Double(powers["strength"] as! String)!
+                    let speed = Double(powers["speed"] as! String)!
+                    let durability = Double(powers["durability"] as! String)!
+                    let power = Double(powers["power"] as! String)!
+                    let combat = Double(powers["combat"] as! String)!
+                    
+                    var powerstats = [Double]()
+                    
+                    powerstats.append(intelligence)
+                    powerstats.append(strength)
+                    powerstats.append(speed)
+                    powerstats.append(durability)
+                    powerstats.append(power)
+                    powerstats.append(combat)
+                    
+                    let superHeroe = SuperHeroeModel(id: id, name: name, fullName: fullName, publisher: publisher, gender: gender, race: race, powerstats: powerstats, imageUrl: imageUrl)
 
                     self.listadoHeroes.append(superHeroe)
                      self.delegate?.actualizaSuperHeroes(self, superHeroes: self.listadoHeroes, id: self.id)
@@ -117,7 +135,7 @@ class SuperHeroesController {
                             let biography = heroe["biography"] as! [String: Any]
                             let publisher = biography["publisher"] as! String
                             
-                            let superHeroe = SuperHeroeModel(id: id, name: name, fullName: nil, publisher: publisher, gender: nil, race: nil, imageUrl: imageUrl)
+                            let superHeroe = SuperHeroeModel(id: id, name: name, fullName: nil, publisher: publisher, gender: nil, race: nil, powerstats: nil, imageUrl: imageUrl)
                            
                             self.listadoHeroes.append(superHeroe)
                         }

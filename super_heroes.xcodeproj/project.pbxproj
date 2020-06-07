@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C33F0BE4248C3577005FBEEE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F0BE3248C3577005FBEEE /* CustomCollectionViewCell.swift */; };
+		C340B52D248D520200978D4C /* DataSetValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C340B52C248D520200978D4C /* DataSetValueFormatter.swift */; };
 		C34B0A28248B7F5E006E074A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B0A27248B7F5E006E074A /* CustomTableViewCell.swift */; };
 		C3819617248B5AF500F32F03 /* HeroeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3819616248B5AF500F32F03 /* HeroeViewController.swift */; };
 		C3F0AD492489C1EB00B94AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0AD482489C1EB00B94AD8 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		32DF352C5CEBCF3F5F5D5620 /* Pods-super_heroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-super_heroes.release.xcconfig"; path = "Target Support Files/Pods-super_heroes/Pods-super_heroes.release.xcconfig"; sourceTree = "<group>"; };
 		66F252312C583972DA239B03 /* Pods-super_heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-super_heroes.debug.xcconfig"; path = "Target Support Files/Pods-super_heroes/Pods-super_heroes.debug.xcconfig"; sourceTree = "<group>"; };
 		C33F0BE3248C3577005FBEEE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		C340B52C248D520200978D4C /* DataSetValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSetValueFormatter.swift; sourceTree = "<group>"; };
 		C34B0A27248B7F5E006E074A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C3819616248B5AF500F32F03 /* HeroeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeViewController.swift; sourceTree = "<group>"; };
 		C3F0AD452489C1EB00B94AD8 /* super_heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = super_heroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 				C3F0AD482489C1EB00B94AD8 /* AppDelegate.swift */,
 				C3F0AD4A2489C1EB00B94AD8 /* SceneDelegate.swift */,
 				C3819616248B5AF500F32F03 /* HeroeViewController.swift */,
+				C340B52C248D520200978D4C /* DataSetValueFormatter.swift */,
 				C3F0AD4C2489C1EB00B94AD8 /* ViewController.swift */,
 				C3F0AD4E2489C1EB00B94AD8 /* Main.storyboard */,
 				C33F0BE3248C3577005FBEEE /* CustomCollectionViewCell.swift */,
@@ -239,6 +242,7 @@
 			files = (
 				C3819617248B5AF500F32F03 /* HeroeViewController.swift in Sources */,
 				C3F0AD4D2489C1EB00B94AD8 /* ViewController.swift in Sources */,
+				C340B52D248D520200978D4C /* DataSetValueFormatter.swift in Sources */,
 				C34B0A28248B7F5E006E074A /* CustomTableViewCell.swift in Sources */,
 				C33F0BE4248C3577005FBEEE /* CustomCollectionViewCell.swift in Sources */,
 				C3F0AD492489C1EB00B94AD8 /* AppDelegate.swift in Sources */,
